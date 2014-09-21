@@ -22,8 +22,8 @@ public class PlayerScript : MonoBehaviour {
 
 		transform.Translate(movement);
 
-		bool shoot = Input.GetButtonDown("Fire1");
-		shoot |= Input.GetButtonDown("Fire2");
+		bool shoot = Input.GetKey("Fire1");
+		shoot |= Input.GetKey("Fire2");
 
 		if (shoot) {
 			foreach(WeaponScript weapon in weapons) {
